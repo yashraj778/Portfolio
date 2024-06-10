@@ -35,6 +35,11 @@ header {
     margin-right: 20px; /* Add margin to the right */
 }
 
+.image-links {
+    display: flex;
+    align-items: center;
+}
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -52,6 +57,23 @@ header .image img {
     border: 2px solid #fff;
     object-fit: cover;
     margin-left: 10px; /* Adjust margin as needed */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.links a {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ffd700; /* Change to a gold color on hover */
 }
 
 .about, .projects {
