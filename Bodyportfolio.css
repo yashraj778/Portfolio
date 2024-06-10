@@ -76,6 +76,26 @@ header .image img {
     color: #ffd700; /* Change to a gold color on hover */
 }
 
+.animated-text {
+    background: linear-gradient(90deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 5s infinite;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .about, .projects {
     background: #ffffff;
     padding: 30px;
