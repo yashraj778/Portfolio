@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -21,6 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header-content {
@@ -28,11 +29,12 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .header-content .text {
     flex-grow: 1;
-    margin-right: 20px; /* Add margin to the right */
+    margin-right: 20px;
 }
 
 .image-links {
@@ -57,7 +59,7 @@ header .image img {
     border-radius: 50%;
     border: 2px solid #fff;
     object-fit: cover;
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-left: 10px;
 }
 
 .links {
@@ -74,7 +76,7 @@ header .image img {
 }
 
 .links a:hover {
-    color: #ffd700; /* Change to a gold color on hover */
+    color: #ffd700;
 }
 
 .floating-text {
@@ -159,4 +161,28 @@ footer p {
 .about.visible, .projects.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    header .image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .links a {
+        font-size: 1.2em;
+    }
+
+    .project-icon {
+        font-size: 1.5em;
+    }
 }
